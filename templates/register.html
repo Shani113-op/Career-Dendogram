@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/register.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+        {% for message in messages %}
+        <div id='msg' class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+            <strong></strong>{{message}}
+          </div>
+          {% endfor %}
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1>Registration</h1>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="Enter Full Name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="Username">Username</label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="Phonenumber">Phone Number</label>
+                    <input type="tel" placeholder="Enter your Phone Number" name="contact" required>
+                </div>
+                <div class="input-box">
+                    <label for="Password">Password</label>
+                    <input type="password" placeholder="Enter yor new password" name="password1" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Your password" name="password2" required>
+                </div>
+                <span class="gender-title">Gender</span>
+                <div class="gender-catagory">
+                    <input type="radio" name="gender" id="male">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" id="Other">
+                    <label for="gender">Other</label>
+                </div>
+                <div class="alert">
+                    <p>By clicking on sign up,you agree to our <a href="">term</a>, <a href="">Privacy policy</a> and <a href=""> cookies policy</a>,you may receive SMS Notification
+                    </p>
+                </div>
+                <div class="button-container">
+                    <button type="submit" href = '/login'>Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        setTimeout(function() {
+          document.getElementById("msg").remove();
+        }, 2000);
+      </script>
+</body>
+</html>

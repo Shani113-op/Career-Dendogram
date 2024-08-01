@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* Background Color */
+body{
+    background:radial-gradient(rgb(24, 216, 241),rgb(11, 97, 227),rgb(24, 2, 61));
+    color: black;
+}
+
+.container {
+    max-width: 650px;
+    padding: 28px;
+    margin: 20px 28px;
+    /* box-shadow: 0 15px 25px; */
+    box-shadow: 0 15px 25px;
+    border-radius: 9%;
+    max-height: 600px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 4%;
+    text-align: center;
+    color: black;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-box {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+.input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.input-box label,
+.gender-title {
+    width: 95%;
+    /* color: rgb(64, 103, 90);*/
+    color: black;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.gender-title {
+    font-size: 16px;
+}
+
+.input-box input {
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(27, 19, 19);
+    outline: none;
+}
+
+.input-box input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gender-catagory {
+    /* color: gray; */
+    color: black;
+}
+
+.gender-catagory label {
+    padding: 0 28px 0 5px;
+    font-size: 14px;
+}
+
+.gender-catagory label,
+.gender-catagory input {
+    cursor: pointer;
+}
+
+.alert p {
+    font-size: 14px;
+    font-style: italic;
+    margin: 5px 0;
+    padding: 10px;
+    /* color: dimgray; */
+    color: black;
+}
+
+.alert a {
+    text-decoration: none;
+}
+
+.alert a:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    margin: 15px 0;
+}
+
+.button-container button {
+    width: 600px;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #aa067b, #61045f);
+}
+
+.button-container button:hover {
+    background-image: linear-gradient(to right, #61045f, #aa067b);
+}

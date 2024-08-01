@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* background color */
+body{
+    background:radial-gradient(rgb(24, 216, 241),rgb(11, 97, 227),rgb(24, 2, 61));
+}
+
+/* Navbar CSS Start */
+.container{
+    width: 100%;
+    padding:1% 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+    position: sticky;
+}
+.navleft ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navleft ul li{
+    padding: 8px 10px;
+    list-style: none;
+}
+.navleft ul li a{
+    color: #fff;
+    list-style: none;
+    text-decoration:none ;
+}
+.navright button{
+    background-color:rgba(209, 209, 33, 0.822);
+    /* color: #fff; */
+    padding: 8px;
+    border-radius: 9px;
+    font-size: 16px;
+}
+/* Navbar CSS End */
+
+/* Main part */
+.careeroptions-left{
+    width: 60%;
+    padding-left: 15%;
+    /* margin: 2% 15%; */
+    /* position: absolute;
+    left: 15%;
+    top: 33%; */
+}
+.cont{
+    width: 90%;
+    display: block;
+    padding-left: 15%;
+    /* position: absolute;
+    top: 11%;
+    left: 15%; */
+}
+.cont p{
+    width: 60%;
+}
+h1{
+    font-size: 3rem;
+    color: #fff;
+}
+h2{
+    font-size:2rem;
+}
+p{
+    font-size: 1rem;
+    color: #fff;
+}
+.careeroptions{
+    display: flex;
+}
+.careeroptions-left button{
+    background-color:rgb(241, 152, 79); 
+    box-shadow: -5px -5px;
+    width: 90%;
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 5px 10%;
+    border: 2px solid black;
+    border-radius: 9px;
+    text-align: left;
+}
+.careeroptions-left button :hover{
+    color: blue;
+    text-decoration: underline;
+    transform: scaleX(5px);
+}
+.careeroptions-right{
+    /* position: absolute; */
+    width: 30%;
+    /* top: 18%; */
+    /* left: 65%; */
+    font-size: larger;
+    color: white;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+.careeroptions-right div{
+    position: relative;
+    top: 0%;
+    
+}
+
+

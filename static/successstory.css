@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Background Color */
+body{
+    background:radial-gradient(rgb(24, 216, 241),rgb(11, 97, 227),rgb(24, 2, 61));
+}
+
+/* Engineering Cards */
+.Engineering{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.succcont .Engineering div img{
+    width: 90%;
+    height: 25vh;
+    margin: 0 5%;
+    border-radius: 50%;
+}
+h1{
+    text-align: center;
+    margin: 4px 0;
+}
+.Engineering div:hover{
+    position: relative;
+    top: 10%;
+    left: 0;
+    padding: 20px;
+    width: 150%;
+    height: fit-content;
+    background:linear-gradient(to right, #61045f, #aa067b);
+    color:#fff;
+    scale: 1.1;
+    z-index: 2;
+    /* transition: 2s; */
+    border: 5px solid white; 
+    /* animation: circlemove 1s ease-in infinite; */
+}
+/* @keyframes circlemove {
+    0%{border-left: #aa067b;}
+    25%{border-top: #aa067b;}
+    50%{border-right: #aa067b;}
+    100%{border-bottom: #aa067b;}
+} */
+
+
+

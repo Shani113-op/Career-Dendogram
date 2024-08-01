@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Background Color */
+body{
+    width: 100%;
+    height: 100vh;
+    background:radial-gradient(rgb(24, 216, 241),rgb(11, 97, 227),rgb(24, 2, 61));
+}
+
+/* Navbar CSS Start */
+.container{
+    width: 100%;
+    padding:1% 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+    position: sticky;
+}
+.navleft ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navleft ul li{
+    padding: 8px 10px;
+    list-style: none;
+}
+.navleft ul li a{
+    color: #fff;
+    list-style: none;
+    text-decoration:none ;
+}
+.navright button{
+    background-color:rgba(209, 209, 33, 0.822);
+    /* color: #fff; */
+    padding: 8px;
+    border-radius: 9px;
+    font-size: 16px;
+}
+/* Navbar CSS End */
+
+/* Personal Info section */
+.personalinfo{
+    min-width: 200px;
+    width: 30%;
+    margin: 3%;
+    background:linear-gradient(to right, #61045f, #aa067b);
+    /* justify-content: center; */
+    position: relative;
+    left: 30%;
+    
+}
+.personalinfo img{
+    position: relative;
+    top: -20px;
+    left: 40%;
+    /* transform: translate(-50%,-50%); */
+    width: 20%;
+    border-radius: 50%;
+}
+.personalinfo input{
+    margin: 5px 10%;
+    padding: 4px 0;
+    width: 80%;
+    border-radius: 9px;
+    text-align:center;
+}
+.personalinfo input::placeholder{
+    font-size:medium;
+}
+.personalinfo textarea{
+    margin: 5px 10%;
+    width: 80%;
+    padding: 4px 0;
+    border-radius: 9px;
+}
+.personalinfo textarea::placeholder{
+    font-size: large;
+}
+.button-container{
+    margin: 15px;
+    padding: 40px;
+}
+.button-container button{
+    display: grid;
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(73, 102, 74) , #4e564f);
+}
+.button-container button:hover{
+    background-image: linear-gradient(to right,#404841, rgb(186, 196, 186));
+}

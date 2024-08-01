@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Background Color */
+body{
+    background:radial-gradient(rgb(24, 216, 241),rgb(11, 97, 227),rgb(24, 2, 61));
+}
+
+/* Navbar CSS Start */
+.container{
+    width: 100%;
+    padding:1% 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+    position: sticky;
+}
+.navleft ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navleft ul li{
+    padding: 8px 10px;
+    list-style: none;
+}
+.navleft ul li a{
+    color: #fff;
+    list-style: none;
+    text-decoration:none ;
+}
+.navright button{
+    background-color:rgba(209, 209, 33, 0.822);
+    /* color: #fff; */
+    padding: 8px;
+    border-radius: 9px;
+    font-size: 16px;
+}
+/* Navbar CSS End */
+
+/* Left Container */
+.contleft{
+    display:grid;
+    width:100%;
+}
+.btns{
+    display: grid;
+    grid-template-columns: 15vw 15vw 120px;
+    column-gap: 15px;
+    /* row-gap: 10px; */
+}
+#btn1{
+    background: url(/static/img/person2.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#btn2{
+    background: url(/static/img/explore.jpeg) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#btn3{
+    background: url(/static/img/studyoption.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#btn4{
+    background: url(/static/img/develop.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#btn5{
+    background: url(/static/img/setgoal.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#btn6{
+    background: url(/static/img/sucessstory.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+/* #btn7{
+    width: 90%
+} */
+.test button{
+    width: 90%;
+    background: linear-gradient(to right, #61045f, #aa067b);
+    color: #fff;
+    border-color:rgb(218, 212, 212);
+    border-radius: 10px;
+    margin-left: 4%;
+    padding: 10px;
+    box-shadow: -3px -3px;
+    font-size: larger;
+    font-weight: bold;
+}
+.btns button{
+    border-color:rgb(218, 212, 212);
+    box-shadow: -3px -3px;
+    border-radius: 10px;
+    background-color:rgb(173, 172, 240);
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 120px;
+    margin: 10px;
+    width: 15vw;
+    height: 30vh;
+}
+.btns button:hover{
+    scale:1.08;
+}
+
+/* Main */
+main{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+/* Right Container */
+.contright{
+    margin-top: 10px;
+    width: 93%;
+    height: 94%;
+    padding: 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(https://source.unsplash.com/random/500×500/?dark) no-repeat;
+    background-size: cover;
+}
+.quoteContainer{
+    /* width: 100%;
+    height: 40%; */
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right, #61045f, #aa067b);
+    color: white;
+    border: 10px solid white;
+    border-radius: 50px;
+}
+#quote{
+    color: white;
+    padding: 20px;
+    font-size:xx-large;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Dancing Script', cursive;
+}
+#author{
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Courgette', cursive;
+}
+/* Footer */
+.foot{
+    margin: 10px;
+    width: 95vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.foot p{
+    display: flex;
+    justify-content: center;
+}
+ul{
+
+    text-decoration: none;
+    list-style: none;
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+}
+ul a{
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Displacable Alert Message</title>
+    <style>
+      .alert {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f44336;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        z-index: 1;
+        transition: top 0.5s ease;
+      }
+
+      .alert.displaced {
+        top: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert">This is an alert message.</div>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+    <script>
+      // Displace alert message after 3 seconds
+      setTimeout(function() {
+        var alertEl = document.querySelector('.alert');
+        alertEl.classList.add('displaced');
+      }, 300);
+    </script>
+  </body>
+</html>

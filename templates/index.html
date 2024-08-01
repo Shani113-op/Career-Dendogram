@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% comment %} this is home page {% endcomment %}
+  <title>Career dendogram</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .banner {
+      width: 100%;
+      height: 100vh;
+      background-image: url(/static/img/career.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      background: radial-gradient(rgb(24, 216, 241), rgb(11, 97, 227), rgb(24, 2, 61));
+    }
+
+    .navbar {
+      width: 85%;
+      margin: auto;
+      padding: 35px 0px;
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 120px;
+      cursor: pointer;
+    }
+
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0px 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .navbar ul li a:hover {
+      color: #009688;
+      transition: 0.5s;
+    }
+
+    .navbar ul li a:hover::after {
+      width: 100%;
+    }
+
+    /* .navbar ul li::after{
+      content: '';
+      height: 3px;
+      width: 0;
+      background: #009688;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+  }
+  .navbar ul li:hover::after{
+      width: 100%;
+  } */
+    .content {
+      width: 100%;
+      color: white;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 60px;
+    }
+
+    .content p {
+      font-size: 20px;
+    }
+
+    button {
+      width: 200px;
+      height: 50px;
+      text-align: center;
+      padding: 10px 0px;
+      margin: 20px 10px;
+      border-radius: 25px;
+      font-weight: bold;
+      border: 3px solid rgb(99, 137, 99);
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      font-size: 25px;
+    }
+
+    .content button:hover {
+      background-color: #009688;
+      transition: 1s;
+    }
+
+    .alert {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f44336;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      z-index: 1;
+      transition: top 0.5s ease;
+    }
+
+    .alert.displaced {
+      top: -50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <!-- <div class="navbar">
+        <img class="logo" src="careerpic.avif" alt="">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Social Media</a></li>
+          <button>login</button>
+        </ul>
+      </div> -->
+    <div class="content">
+      <h1>!!Choose Your Right Career!!</h1>
+      <p>Register And login and choose your <br> Right life destination</p>
+      <div>
+        <button type="button" onclick="location.href = '/login'">Login</button>
+        <button type="button" onclick="location.href = '/register'">Register</button>
+      </div>
+    </div>
+  </div>
+
+</html>
